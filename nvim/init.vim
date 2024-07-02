@@ -19,7 +19,7 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-inoremap jj <Esc>
+" inoremap jj <Esc>
 
 
 " 

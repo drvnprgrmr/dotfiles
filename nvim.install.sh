@@ -1,6 +1,7 @@
 #!/bin/bash
 
-mkdir -p "$XDG_CONFIG_HOME/nvim"
-mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
+mkdir -p "$HOME/.config/nvim"
+mkdir -p "$HOME/.config/nvim/undo"
 
-ln -s "$HOME/dotfiles/nvim" "$XDG_CONFIG_HOME/nvim"
+ln -sf "$HOME/dotfiles/nvim/init.vim" "$HOME/.config/nvim"
+# ln -s "$HOME/dotfiles/nvim/init.lua" "$HOME/.config/nvim"
