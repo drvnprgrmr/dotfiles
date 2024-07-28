@@ -4,3 +4,7 @@ if whence -w run-help | grep -q ": alias"; then
 fi
 autoload run-help
 alias help=run-help
+
+
+# kickstart.nvim
+alias knvim='NVIM_APPNAME="nvim-kickstart" nvim'
