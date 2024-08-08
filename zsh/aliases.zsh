@@ -5,6 +5,11 @@ fi
 autoload run-help
 alias help=run-help
 
-
 # kickstart.nvim
 alias knvim='NVIM_APPNAME="nvim-kickstart" nvim'
+
+# git
+alias gst="git status"
+
+# ls
+alias la="ls -la"
