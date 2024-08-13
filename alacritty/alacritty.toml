@@ -1,0 +1,18 @@
+import = ["~/.config/alacritty/font.toml"]
+
+[window]
+# Make left option key behave as alt key on macOS
+option_as_alt = "OnlyLeft"
+
+# Always start in full screen mode
+startup_mode = "FullScreen"
+
+# Make background semi-transparent
+opacity = 0.5
+
+# Prefer dark theme always
+decorations_theme_variant = "Dark"
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_timeout = 60

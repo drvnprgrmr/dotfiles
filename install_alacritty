@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+# backup previous alacritty confi
+alacritty_dir="$HOME/.config/alacritty"
+if [[ -d $alacritty_dir ]]; then
+  echo "backing up previous config"
+  mv -v $alacritty_dir "$alacritty_dir.bk"
+fi
+unset alacritty_dir
+
+# link the alacritty directory to the proper place
+echo "linking dotfile config"
+ln -v -sf "$(pwd)/alacritty/" "$HOME/.config/alacritty"
+
+# vim: ft=zsh
