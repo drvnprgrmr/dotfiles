@@ -1,14 +1,14 @@
-# backup previous env
-if [[ -f ~/.zshenv ]]; then
-    echo "backing up previous .zshenv"
-    mv -v ~/.zshenv ~/.zshenv.bak
+# load the zshenv to configure needed environment variables
+source "$(pwd)/zsh/.zshenv"
+
+# backup old zsh dir if it exists
+if [[ -e ~/.config/zsh ]]; then
+    echo "backing up old zsh dir in ~/.config"
+    mv -v ~/.config/zsh ~/.config/zsh.bak
 fi
 
-# make sure .zshenv is replaced so that other things work properly
-echo "linking .zshenv to home directory"
-ln -v -sf $(pwd)/zsh/.zshenv ~/.zshenv
-
 # link the zsh folder to the ~/.config directory
-mkdir -p ~/.config/zsh/
-echo "linking .zshrc to xdg config dirctory"
-ln -v -sf $(pwd)/zsh/.zshrc ~/.config/zsh/.zshrc
+echo "linking zsh folder to xdg config dirctory"
+ln -v -sf $(pwd)/zsh/ ~/.config/zsh
+
+# vim: ft=zsh
