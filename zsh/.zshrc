@@ -5,7 +5,8 @@ PS1="%{$fg[blue]%}%1~ %{$reset_color%}%# "
 # use emacs keybindings for zle
 bindkey -e
 
-source "$DOTFILES/zsh/aliases"
+# load aliases
+source "$ZDOTDIR/aliases"
 
 # TODO: find a better solution for this
 export NVM_DIR="$HOME/.nvm"

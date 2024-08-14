@@ -9,5 +9,9 @@ alias help=run-help
 alias knvim='NVIM_APPNAME="nvim-kickstart" nvim'
 
 # git
-alias gst="git status" # ls
+alias gst="git status"
+alias gd="git diff"
+alias glog="git log --oneline --graph"
+
+# ls
 alias la="ls -la"

@@ -9,6 +9,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export ZSHRC="$ZDOTDIR/.zshrc"
 
 # History filepath
 export HISTFILE="$ZDOTDIR/.zhistory"
