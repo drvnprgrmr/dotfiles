@@ -14,5 +14,9 @@ opacity = 0.5
 decorations_theme_variant = "Dark"
 
 [cursor]
-style = { shape = "Beam", blinking = "On" }
-blink_timeout = 60
+# deactivated because it seems to break vim's cursors
+# style = { shape = "Beam", blinking = "On" }
+# blink_timeout = 60
+
+[mouse]
+hide_when_typing = true
