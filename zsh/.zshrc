@@ -19,3 +19,8 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi
+
