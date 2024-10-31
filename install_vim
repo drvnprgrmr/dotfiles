@@ -1,0 +1,6 @@
+if [[ -e ~/.vimrc ]]; then
+    mv -v ~/.vimrc ~/.vimrc.bak
+fi
+
+ln -v -sf $(pwd)/vim/init.vim ~/.vimrc
+# vim: ft=zsh
