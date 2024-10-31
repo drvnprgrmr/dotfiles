@@ -1,3 +1,4 @@
+[general]
 import = ["~/.config/alacritty/font.toml"]
 
 [window]
@@ -20,3 +21,4 @@ decorations_theme_variant = "Dark"
 
 [mouse]
 hide_when_typing = true
+
