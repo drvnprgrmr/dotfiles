@@ -1,6 +1,11 @@
 # load the zshenv to configure needed environment variables
 source "$(pwd)/zsh/.zshenv"
 
+if [[ -e ~/.zshenv ]]; then
+    mv -v ~/.zshenv ~/.zshenv.bak
+fi
+ln -v -sf $(pwd)/zsh/.zshenv ~/.zshenv
+
 # backup old zsh dir if it exists
 if [[ -e ~/.config/zsh ]]; then
     echo "backing up old zsh dir in ~/.config"
