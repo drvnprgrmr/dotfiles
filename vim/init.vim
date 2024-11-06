@@ -8,6 +8,17 @@
 "     Plug 'vim-airline/vim-airline-themes'
 " call plug#end()
 
+" colorshcemes I can at least consider
+colorscheme evening
+colorscheme desert
+colorscheme habamax
+colorscheme lunaperche
+colorscheme peachpuff " light brown
+colorscheme quiet
+colorscheme sorbet
+colorscheme zaibatsu
+
+
 
 "
 " MAPPINGS
@@ -19,12 +30,13 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" inoremap jj <Esc>
-
 
 " 
 " OPTIONS
 " 
+set nocompatible
+
+filetype plugin indent on
 
 set cursorline
 
