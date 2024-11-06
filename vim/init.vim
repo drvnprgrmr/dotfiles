@@ -8,7 +8,7 @@
 "     Plug 'vim-airline/vim-airline-themes'
 " call plug#end()
 
-" colorshcemes I can at least consider
+" colorschemes I can at least consider
 colorscheme evening
 colorscheme desert
 colorscheme habamax
@@ -73,6 +73,16 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 
 let g:netrw_browse_split = 4 " Open file as preview in last window
+
+"
+" AUTOCOMMANDS
+"
+
+augroup save_and_load_views
+  autocmd!
+  autocmd BufWinLeave ?*.* mkview
+  autocmd BufWinEnter ?*.* silent! loadview
+augroup END
 
 
 "
