@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/font.toml"]
+import = ["./font.toml"]
 
 [window]
 # Make left option key behave as alt key on macOS
